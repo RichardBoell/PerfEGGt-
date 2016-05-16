@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79120EDF1CE1D3C800D991C5 /* TextureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79120EDE1CE1D3C800D991C5 /* TextureViewController.swift */; };
+		7927A9421CE8F4BE00F8A0F8 /* Kochzeit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7927A9411CE8F4BE00F8A0F8 /* Kochzeit.swift */; };
+		7927A9441CE8FC9500F8A0F8 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7927A9431CE8FC9500F8A0F8 /* TimerViewController.swift */; };
 		795F18F11CE0F94900F976EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F18F01CE0F94900F976EE /* AppDelegate.swift */; };
 		795F18F31CE0F94900F976EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F18F21CE0F94900F976EE /* ViewController.swift */; };
 		795F18F61CE0F94900F976EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795F18F41CE0F94900F976EE /* Main.storyboard */; };
 		795F18F81CE0F94900F976EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795F18F71CE0F94900F976EE /* Assets.xcassets */; };
 		795F18FB1CE0F94900F976EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795F18F91CE0F94900F976EE /* LaunchScreen.storyboard */; };
-		795F19061CE0F94900F976EE /* ViewControllerCheckoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F19051CE0F94900F976EE /* ViewControllerCheckoutTests.swift */; };
-		795F19111CE0F94900F976EE /* ViewControllerCheckoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F19101CE0F94900F976EE /* ViewControllerCheckoutUITests.swift */; };
+		79DB9FD01CE74A1C00A10A4B /* diameterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB9FCF1CE74A1C00A10A4B /* diameterViewController.swift */; };
+		79DB9FD21CE74A6B00A10A4B /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB9FD11CE74A6B00A10A4B /* RangeSlider.swift */; };
+		79DB9FD41CE74F6000A10A4B /* RangeSliderThumbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB9FD31CE74F6000A10A4B /* RangeSliderThumbLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79120EDE1CE1D3C800D991C5 /* TextureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextureViewController.swift; sourceTree = "<group>"; };
+		7927A9411CE8F4BE00F8A0F8 /* Kochzeit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kochzeit.swift; sourceTree = "<group>"; };
+		7927A9431CE8FC9500F8A0F8 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		795F18ED1CE0F94900F976EE /* ViewControllerCheckout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerCheckout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		795F18F01CE0F94900F976EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		795F18F21CE0F94900F976EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,11 +49,10 @@
 		795F18FA1CE0F94900F976EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		795F18FC1CE0F94900F976EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		795F19011CE0F94900F976EE /* ViewControllerCheckoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerCheckoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		795F19051CE0F94900F976EE /* ViewControllerCheckoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCheckoutTests.swift; sourceTree = "<group>"; };
-		795F19071CE0F94900F976EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		795F190C1CE0F94900F976EE /* ViewControllerCheckoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerCheckoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		795F19101CE0F94900F976EE /* ViewControllerCheckoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCheckoutUITests.swift; sourceTree = "<group>"; };
-		795F19121CE0F94900F976EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79DB9FCF1CE74A1C00A10A4B /* diameterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = diameterViewController.swift; sourceTree = "<group>"; };
+		79DB9FD11CE74A6B00A10A4B /* RangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		79DB9FD31CE74F6000A10A4B /* RangeSliderThumbLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSliderThumbLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				795F18EF1CE0F94900F976EE /* ViewControllerCheckout */,
-				795F19041CE0F94900F976EE /* ViewControllerCheckoutTests */,
-				795F190F1CE0F94900F976EE /* ViewControllerCheckoutUITests */,
 				795F18EE1CE0F94900F976EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,8 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				795F18F01CE0F94900F976EE /* AppDelegate.swift */,
-				795F18F21CE0F94900F976EE /* ViewController.swift */,
+				795F191E1CE0FBF900F976EE /* View Controllers */,
 				795F18F41CE0F94900F976EE /* Main.storyboard */,
+				7927A9411CE8F4BE00F8A0F8 /* Kochzeit.swift */,
+				79DB9FD11CE74A6B00A10A4B /* RangeSlider.swift */,
+				79DB9FD31CE74F6000A10A4B /* RangeSliderThumbLayer.swift */,
 				795F18F71CE0F94900F976EE /* Assets.xcassets */,
 				795F18F91CE0F94900F976EE /* LaunchScreen.storyboard */,
 				795F18FC1CE0F94900F976EE /* Info.plist */,
@@ -107,22 +114,15 @@
 			path = ViewControllerCheckout;
 			sourceTree = "<group>";
 		};
-		795F19041CE0F94900F976EE /* ViewControllerCheckoutTests */ = {
+		795F191E1CE0FBF900F976EE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				795F19051CE0F94900F976EE /* ViewControllerCheckoutTests.swift */,
-				795F19071CE0F94900F976EE /* Info.plist */,
+				795F18F21CE0F94900F976EE /* ViewController.swift */,
+				79120EDE1CE1D3C800D991C5 /* TextureViewController.swift */,
+				79DB9FCF1CE74A1C00A10A4B /* diameterViewController.swift */,
+				7927A9431CE8FC9500F8A0F8 /* TimerViewController.swift */,
 			);
-			path = ViewControllerCheckoutTests;
-			sourceTree = "<group>";
-		};
-		795F190F1CE0F94900F976EE /* ViewControllerCheckoutUITests */ = {
-			isa = PBXGroup;
-			children = (
-				795F19101CE0F94900F976EE /* ViewControllerCheckoutUITests.swift */,
-				795F19121CE0F94900F976EE /* Info.plist */,
-			);
-			path = ViewControllerCheckoutUITests;
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +207,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 795F18E81CE0F94900F976EE /* Build configuration list for PBXProject "ViewControllerCheckout" */;
+			buildConfigurationList = 795F18E81CE0F94900F976EE /* Build configuration list for PBXProject "PerfEGGt!" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -259,8 +259,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79120EDF1CE1D3C800D991C5 /* TextureViewController.swift in Sources */,
+				79DB9FD01CE74A1C00A10A4B /* diameterViewController.swift in Sources */,
+				7927A9421CE8F4BE00F8A0F8 /* Kochzeit.swift in Sources */,
+				79DB9FD41CE74F6000A10A4B /* RangeSliderThumbLayer.swift in Sources */,
 				795F18F31CE0F94900F976EE /* ViewController.swift in Sources */,
+				7927A9441CE8FC9500F8A0F8 /* TimerViewController.swift in Sources */,
 				795F18F11CE0F94900F976EE /* AppDelegate.swift in Sources */,
+				79DB9FD21CE74A6B00A10A4B /* RangeSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				795F19061CE0F94900F976EE /* ViewControllerCheckoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +281,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				795F19111CE0F94900F976EE /* ViewControllerCheckoutUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ViewControllerCheckout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = whatever.ViewControllerCheckout;
+				PRODUCT_BUNDLE_IDENTIFIER = whatever.PerfEGGt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -417,7 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ViewControllerCheckout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = whatever.ViewControllerCheckout;
+				PRODUCT_BUNDLE_IDENTIFIER = whatever.PerfEGGt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -471,7 +475,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		795F18E81CE0F94900F976EE /* Build configuration list for PBXProject "ViewControllerCheckout" */ = {
+		795F18E81CE0F94900F976EE /* Build configuration list for PBXProject "PerfEGGt!" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				795F19131CE0F94900F976EE /* Debug */,
@@ -487,6 +491,7 @@
 				795F19171CE0F94900F976EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		795F19181CE0F94900F976EE /* Build configuration list for PBXNativeTarget "ViewControllerCheckoutTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				795F191A1CE0F94900F976EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		795F191B1CE0F94900F976EE /* Build configuration list for PBXNativeTarget "ViewControllerCheckoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				795F191D1CE0F94900F976EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
