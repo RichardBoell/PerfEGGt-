@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import QuartzCore
 
 class RangeSliderThumbLayer: CALayer {
-
+    var highlighted = false
+    weak var rangeSlider: RangeSlider?
 }

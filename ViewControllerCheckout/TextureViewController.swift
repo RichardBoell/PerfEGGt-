@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class HeightViewController: UIViewController, CLLocationManagerDelegate {
+class textureViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     
