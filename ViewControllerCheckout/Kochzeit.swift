@@ -26,9 +26,9 @@ var boilingTime: Double {
 }
 
 var seconds: Int {
-    return Int(round((boilingTime % 1)*60))
+    return Int(round((boilingTime.truncatingRemainder(dividingBy: 1))*60))
 }
 
 var minutes: Int {
-    return Int(round(boilingTime - (boilingTime % 1)))
+    return Int(round(boilingTime - (boilingTime.truncatingRemainder(dividingBy: 1))))
 }

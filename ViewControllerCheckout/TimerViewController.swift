@@ -19,15 +19,15 @@ class timerViewController: UIViewController {
     
     var time: Double = Double(60*minutes + seconds)
     var timerseconds: Int {
-        return Int(round(time % 60))
+        return Int(round(time.truncatingRemainder(dividingBy: 60)))
     }
     var timerminutes: Int {
         return Int((time - Double(timerseconds))/60)
     }
-    var timer = NSTimer()
+    var timer = Timer()
     
-    @IBAction func startTimer(sender: AnyObject) {
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: (#selector(timerViewController.updateTimer)), userInfo: nil, repeats: true)
+    @IBAction func startTimer(_ sender: AnyObject) {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(timerViewController.updateTimer)), userInfo: nil, repeats: true)
     }
     
     func updateTimer() {

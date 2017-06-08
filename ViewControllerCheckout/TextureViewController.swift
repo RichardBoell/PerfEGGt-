@@ -25,7 +25,7 @@ class textureViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
     }
     
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let myCurrentLoc = locations[locations.count - 1]
         altitude = Double(myCurrentLoc.altitude)
         myAltitude.text = "Your current altitude is: \(Int(altitude)) m"
@@ -36,14 +36,14 @@ class textureViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var textureSliderValue: UISlider!
     
     
-    @IBAction func updateTextureValue(sender: AnyObject) {
+    @IBAction func updateTextureValue(_ sender: AnyObject) {
         texture = Double(textureSliderValue.value)
     }
     
     @IBOutlet var switchState: UISwitch!
     
-    @IBAction func updateInitialTemperature(sender: AnyObject) {
-        if switchState.on {
+    @IBAction func updateInitialTemperature(_ sender: AnyObject) {
+        if switchState.isOn {
             initialTemperature = 4.0
         } else {
             initialTemperature = 20.0

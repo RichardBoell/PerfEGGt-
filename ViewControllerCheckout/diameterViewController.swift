@@ -9,7 +9,7 @@
 import UIKit
 
 class diameterViewController: UIViewController {
-    let rangeSlider = RangeSlider(frame: CGRectZero)
+    let rangeSlider = RangeSlider(frame: CGRect.zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class diameterViewController: UIViewController {
         rangeSlider.backgroundColor = UIColor(white:0.2 , alpha: 0)
         view.addSubview(rangeSlider)
         
-        rangeSlider.addTarget(self, action: #selector(diameterViewController.rangeSliderValueChanged(_:)), forControlEvents: .ValueChanged)
+        rangeSlider.addTarget(self, action: #selector(diameterViewController.rangeSliderValueChanged(_:)), for: .valueChanged)
         
     }
     
@@ -38,7 +38,7 @@ class diameterViewController: UIViewController {
         self.view.addSubview(lowerRectangle)*/
     }
     
-    func rangeSliderValueChanged(rangeSlider: RangeSlider) {
+    func rangeSliderValueChanged(_ rangeSlider: RangeSlider) {
         diameter = round(10*(rangeSlider.upperValue - rangeSlider.lowerValue))/10
         diameterText.text = "\(diameter) cm"
 

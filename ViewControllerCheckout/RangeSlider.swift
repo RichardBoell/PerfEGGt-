@@ -35,10 +35,10 @@ class RangeSlider: UIControl {
         lowerThumbLayer.rangeSlider = self
         upperThumbLayer.rangeSlider = self
         
-        lowerThumbLayer.backgroundColor = UIColor(white:1, alpha:0.7).CGColor
+        lowerThumbLayer.backgroundColor = UIColor(white:1, alpha:0.7).cgColor
         layer.addSublayer(lowerThumbLayer)
         
-        upperThumbLayer.backgroundColor = UIColor(white:1, alpha:0.7).CGColor
+        upperThumbLayer.backgroundColor = UIColor(white:1, alpha:0.7).cgColor
         layer.addSublayer(upperThumbLayer)
         
         updateLayerFrames()
@@ -52,8 +52,8 @@ class RangeSlider: UIControl {
     
     //MARK: Track users touch gestures and update thumb values
     
-    override func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
-        previousLocation = touch.locationInView(self)
+    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        previousLocation = touch.location(in: self)
         
         // Hit test the thumb layers
         if lowerThumbLayer.frame.contains(previousLocation) {
@@ -65,12 +65,12 @@ class RangeSlider: UIControl {
         return lowerThumbLayer.highlighted || upperThumbLayer.highlighted
     }
     
-    func boundValue(value: Double, toLowerValue lowerValue: Double, upperValue: Double) -> Double {
+    func boundValue(_ value: Double, toLowerValue lowerValue: Double, upperValue: Double) -> Double {
         return min(max(value, lowerValue), upperValue)
     }
     
-    override func continueTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
-        let location = touch.locationInView(self)
+    override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        let location = touch.location(in: self)
         
         // 1. Determine by how much the user has dragged
         let deltaLocation = Double(location.y - previousLocation.y)
@@ -95,12 +95,12 @@ class RangeSlider: UIControl {
         
         CATransaction.commit()
         
-        sendActionsForControlEvents(.ValueChanged)
+        sendActions(for: .valueChanged)
         
         return true
     }
     
-    override func endTrackingWithTouch(touch: UITouch?, withEvent event: UIEvent?) {
+    override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
         lowerThumbLayer.highlighted = false
         upperThumbLayer.highlighted = false
     }
@@ -122,7 +122,7 @@ class RangeSlider: UIControl {
     }
     
     // convert unit value to unit displayposition
-    func positionForValue(value: Double) -> Double {
+    func positionForValue(_ value: Double) -> Double {
         return Double(bounds.height) * (value - minimumValue) / (maximumValue - minimumValue)
     }
     
